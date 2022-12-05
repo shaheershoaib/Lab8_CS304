@@ -11,8 +11,10 @@
 
 <%
 // Print prior error login message if present
-if (session.getAttribute("loginMessage") != null)
+if (session.getAttribute("loginMessage") != null){
 	out.println("<p>"+session.getAttribute("loginMessage").toString()+"</p>");
+	session.setAttribute("loginMessage", null);
+}
 %>
 
 <br>

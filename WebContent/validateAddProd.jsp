@@ -56,7 +56,7 @@ if(execute){
 else
 { 
 session.setAttribute("notAddedProd", "Please fill out all the information correctly to add a product" );
-response.sendRedirect("signup.jsp");
+response.sendRedirect("addProd.jsp");
 
 }
 	

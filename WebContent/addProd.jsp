@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Screen</title>
+<title>Add Product</title>
 </head>
 <body>
 <%@ include file="auth.jsp"%>
@@ -10,8 +10,10 @@
 <h3>Please Login to System</h3>
 <%
 // Print prior error login message if present
-if (session.getAttribute("notAddedProf") != null)
-	out.println("<p>"+session.getAttribute("notSignedUp").toString()+"</p>");
+if (session.getAttribute("notAddedProd") != null){
+	out.println("<p>"+session.getAttribute("notAddedProf").toString()+"</p>");
+    session.setAttribute("notAddedProd", null);
+}
 %>
 
 <br>

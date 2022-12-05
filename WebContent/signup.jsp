@@ -10,8 +10,10 @@
 <h3>Please Login to System</h3>
 <%
 // Print prior error login message if present
-if (session.getAttribute("notSignedUp") != null)
+if (session.getAttribute("notSignedUp") != null){
 	out.println("<p>"+session.getAttribute("notSignedUp").toString()+"</p>");
+    session.setAttribute("notSignedUp", null);
+}
 %>
 
 <br>

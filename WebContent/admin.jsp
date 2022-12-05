@@ -45,7 +45,8 @@ catch (SQLException ex)
 }
 finally
 {	
-		out.println("<h2><a href=\"addProd.jsp\">Add a Product</a></h2>");
+	out.println("<h2><a href=\"addProd.jsp\">Add a Product</a></h2>");
+	out.println("<h2><a href=\"deleteProd.jsp\">Delete a Product</a></h2>");
 	out.println("<h2><a href=\"listcustomers.jsp\">List Customers</a></h2>");
 	out.println("<h2><a href=\"warehouseinventory.jsp\">List Products By Warehouse</a></h2>");
 	closeConnection();	
