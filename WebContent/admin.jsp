@@ -49,6 +49,8 @@ finally
 	out.println("<h2><a href=\"deleteProd.jsp\">Delete a Product</a></h2>");
 	out.println("<h2><a href=\"listcustomers.jsp\">List Customers</a></h2>");
 	out.println("<h2><a href=\"warehouseinventory.jsp\">List Products By Warehouse</a></h2>");
+	out.println("<h2><a href=\"loaddata.jsp?flag="+1+"\">Restore Database</a></h2>");
+
 	closeConnection();	
 }
 %>

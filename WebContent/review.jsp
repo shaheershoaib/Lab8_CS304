@@ -26,7 +26,7 @@ if (session.getAttribute("incorrectReview") != null){
 
 <tr>
     <td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Review:</font></div></td>
-	<td><input type="text" name="reviewDesc"  size=10 maxlength = "1000"></td>
+	<td><input type="text" name="reviewDesc"  size=10 maxlength = "1000" ></td>
 </tr>
 
 <tr>

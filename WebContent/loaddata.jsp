@@ -41,7 +41,9 @@ try
     }	 
     scanner.close();
     
+    if(request.getParameter("flag")==null)
     out.print("<br><br><h1>Database loaded.</h1>");
+    else response.sendRedirect("admin.jsp");
 }
 catch (Exception e)
 {
