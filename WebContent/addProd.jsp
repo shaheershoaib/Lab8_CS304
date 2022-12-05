@@ -7,7 +7,7 @@
 <%@ include file="auth.jsp"%>
 <div style="margin:0 auto;text-align:center;display:inline">
 
-<h3>Please Login to System</h3>
+<h3>Add a Product</h3>
 <%
 // Print prior error login message if present
 if (session.getAttribute("notAddedProd") != null){

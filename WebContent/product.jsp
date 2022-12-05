@@ -61,10 +61,13 @@ try
 		out.println("<h3><a href=\"addcart.jsp?id="+prodId+ "&name=" + rst.getString(2)
 								+ "&price=" + rst.getDouble(3)+"\">Add to Cart</a></h3>");		
 		
+		out.println("<h3><a href=\"review.jsp?id="+productId+"\">Leave a Review</a></h3>");	
+		
 		out.println("<h3><a href=\"listprod.jsp\">Continue Shopping</a>");
+
 	}
 } 
-catch (SQLException ex) {
+catch (Exception ex) {
 	out.println(ex);
 }
 finally
@@ -72,6 +75,8 @@ finally
 	closeConnection();
 }
 %>
+<%@ include file="printReviews.jsp" %>
+
 
 </body>
 </html>
