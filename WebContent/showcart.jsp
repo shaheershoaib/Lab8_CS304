@@ -19,7 +19,7 @@
 HashMap<String, ArrayList<Object>> productList = (HashMap<String, ArrayList<Object>>) session.getAttribute("productList");
 
 
-if (productList == null)
+if (productList == null || productList.isEmpty())
 {	out.println("<H1>Your shopping cart is empty!</H1>");
 	productList = new HashMap<String, ArrayList<Object>>();
 }
@@ -89,7 +89,6 @@ else
 
 if(!productList.isEmpty())
 	out.println("<h2><a href=\"checkout.jsp\">Check Out</a></h2>");
-
 }
 %>
 <h2><a href="listprod.jsp">Continue Shopping</a></h2>
