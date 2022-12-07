@@ -69,12 +69,22 @@ else
 		}		
 
 		out.print("<td align=\"right\">"+currFormat.format(pr)+"</td>");
-		out.print("<td align=\"right\">"+currFormat.format(pr*qty)+"</td><td><a href=removefromcart.jsp?id="+product.get(0)+">Remove From Cart</a></td></tr>");
+		out.print("<td align=\"right\">"+currFormat.format(pr*qty)+"</td>");
+		//out.print("<td><a href=decreaseQuantity.jsp?id="+product.get(0)+">Decrease Quantity</a></td>");
+		String decreaseQuantityForm = "<td><form name=\"decreaseQuanityForm\" method=post action=\"decreaseQuantity.jsp\"><input type=\"hidden\" name=\"id\" value = \""+product.get(0)+"\"><input class=\"submit\" type=\"submit\" name=\"decrease\" value=\"-\"></form></td>";
+		out.print(decreaseQuantityForm);
+		String increaseQuantityForm = "<td><form name=\"increaseQuantityForm\" method=post action=\"increaseQuantity.jsp\"><input type=\"hidden\" name=\"id\" value = \""+product.get(0)+"\"><input class=\"submit\" type=\"submit\" name=\"decrease\" value=\"+\"></form></td>";
+		out.print(increaseQuantityForm);
+		String deleteProductForm = "<td><form name=\"deleteProductForm\" method=post action=\"removeFromCart.jsp\"><input type=\"hidden\" name=\"id\" value = \""+product.get(0)+"\"><input class=\"submit\" type=\"submit\" name=\"decrease\" value=\"Remove From Cart\"></form></td>";
+		//out.print("<td><a href=removefromcart.jsp?id="+product.get(0)+">Remove From Cart</a></td></tr>");
+		out.print(deleteProductForm);
 		out.println("</tr>");
 		total = total +pr*qty;
 	}
 	out.println("<tr><td colspan=\"4\" align=\"right\"><b>Order Total</b></td>"
 			+"<td align=\"right\">"+currFormat.format(total)+"</td></tr>");
+
+			
 	out.println("</table>");
 
 if(!productList.isEmpty())
