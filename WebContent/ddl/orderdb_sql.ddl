@@ -159,9 +159,9 @@ INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES (
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Amazon Lamp',3,'12 - 1 lb pkgs.',15.99);
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Astrid Lamp',3,'12 - 12 oz jars',29.99);
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Snake Lamp',3,'18 - 500 g pkgs.',34.99);
-INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Indivi Sofa',4,'12 - 200 ml jars',31.00);
-INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Chaise Sofa',4,'1 kg pkg.',21.00);
-INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Darcy Sofa',4,'10 - 500 g pkgs.',38.00);
+INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Indivi Sofa',4,'12 - 200 ml jars',149.99);
+INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Chaise Sofa',4,'1 kg pkg.',129.99);
+INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Darcy Sofa',4,'10 - 500 g pkgs.',159.99);
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Delta Racing Bed',5,'40 - 100 g pkgs.',199.99);
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Awara Waterbed',5,'24 - 250 ml bottles',599.99);
 INSERT INTO product(productName, categoryId, productDesc, productPrice) VALUES ('Formula 1 Racing Bed',5,'32 - 500 g boxes',250.99);

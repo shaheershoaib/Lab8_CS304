@@ -26,7 +26,7 @@
 
 <h2 align="center"><a href="customer.jsp">Customer Info</a></h2>
 
-<h2 align="center"><a href="admin.jsp">Administrators</a></h2>
+<h2 align="center"><a href="adminLogin.jsp">Administrators</a></h2>
 
 
 
