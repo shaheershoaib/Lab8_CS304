@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Login As Admin</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 

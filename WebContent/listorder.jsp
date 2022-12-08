@@ -6,6 +6,7 @@
 <html>
 <head>
 <title>BudgetBot Orders List</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 

@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>BudgetBot Home Page</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h1 align="center">BudgetBot</h1>

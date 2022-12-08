@@ -2,20 +2,25 @@
 <html>
 <head>
 <title>Administrator Page</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
 <%@ include file="auth.jsp"%>
+<%@ include file="adminAuth.jsp"%>
 <%@ page import="java.text.NumberFormat" %>
 <%@ include file="jdbc.jsp" %>
 
+
 <%
 	String userName = (String) session.getAttribute("authenticatedUser");
+	session.setAttribute("adminLogIn", null); // If a user backs out, must authenticate as admin again for security.
 %>
 
 <%
 
 // Print out total order amount by day
+
 String sql = "select year(orderDate), month(orderDate), day(orderDate), SUM(totalAmount) FROM OrderSummary GROUP BY year(orderDate), month(orderDate), day(orderDate)";
 
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
@@ -55,6 +60,9 @@ finally
 	
 	closeConnection();	
 }
+
+
+
 %>
 
 </body>

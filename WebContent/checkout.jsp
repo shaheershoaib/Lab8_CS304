@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>BudgetBot Checkout Line</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="auth.jsp"%>
