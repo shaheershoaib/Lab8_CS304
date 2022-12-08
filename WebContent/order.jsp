@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<% 
+<%
 // Get customer id
 String custId = request.getParameter("customerId");
 @SuppressWarnings({"unchecked"})

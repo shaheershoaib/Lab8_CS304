@@ -26,6 +26,7 @@
 try               
 {
 	getConnection();
+
  	ResultSet rst = executeQuery("SELECT DISTINCT categoryName FROM Product");
         while (rst.next()) 
 		out.println("<option>"+rst.getString(1)+"</option>");
@@ -36,11 +37,13 @@ catch (SQLException ex)
 */
 %>
 
+
   <option>Chairs</option>
   <option>Tables</option>
   <option>Lamps</option>
   <option>Sofas</option>
-  <option>Beds</option>    
+  <option>Beds</option>
+
   </select>
   <input type="text" name="productName" size="50">
   <input type="submit" value="Submit"><input type="reset" value="Reset"></p>
@@ -89,6 +92,8 @@ else
 }
 
 out.println(filter);
+String goToCartForm = "<td><form name=\"deleteProductForm\" method=post action=\"showcart.jsp\"><input class=\"submit\" type=\"submit\" name=\"goToCart\" value=\"Go To Cart\"></form></td>";
+out.println(goToCartForm);
 
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 

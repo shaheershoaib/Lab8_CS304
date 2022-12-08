@@ -50,7 +50,9 @@ finally
 	out.println("<h2><a href=\"listcustomers.jsp\">List Customers</a></h2>");
 	out.println("<h2><a href=\"warehouseinventory.jsp\">List Products By Warehouse</a></h2>");
 	out.println("<h2><a href=\"loaddata.jsp?flag="+1+"\">Restore Database</a></h2>");
-
+	String homeScreenForm = "<td><form name=\"homeScreenForm\" method=post action=\"index.jsp\"><input class=\"submit\" type=\"submit\" name=\"Back To Home Screen\" value=\"Back\"></form></td>";
+	out.println(homeScreenForm);
+	
 	closeConnection();	
 }
 %>
